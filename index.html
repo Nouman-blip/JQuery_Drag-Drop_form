@@ -1,0 +1,49 @@
+<!DOCTYPE html
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport"="width=devicewidth, initial-=1.0">
+    <title>Custom Form Builder</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Include jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+    <div id="form-builder">
+        <div id="toolbox" class="sortable">
+            <div class="draggable" data-type="name"><i class="fas fa-user"></i> Name</div>
+            <div class="draggable" data-type="phoneNumber"><i class="fas fa-phone"></i> phoneNumber</div>
+            <div class="draggable" data-type="text"><i class="fas fa-font"></i> Text Input</div>
+            <div class="draggable" data-type="email"><i class="fas fa-envelope"></i> Email Input</div>
+            <div class="draggable" data-type="number"><i class="fas fa-sort-numeric-up"></i> Number Input</div>
+            <div class="draggable" data-type="checkbox"><i class="fas fa-check-square"></i> Checkbox</div>
+            <div class="draggable" data-type="radio"><i class="fas fa-dot-circle"></i> Radio Button</div>
+            <div class="draggable" data-type="textarea"><i class="fas fa-text-height"></i> Textarea</div>
+            <div class="draggable" data-type="select"><i class="fas fa-caret-down"></i> Select Dropdown</div>
+            <div class="draggable" data-type="date"><i class="fas fa-calendar-alt"></i> Date Input</div>
+        </div>
+        <div id="form-preview-container" >
+            <h2>Wanna make a form!, right?</h2>
+            <div id="form-preview" class="droppable">
+                <!-- The form elements will appear here -->
+            </div>
+            <!-- "Submit Form" button inside the form preview container -->
+            <button id="submit-btn" style="display: none;">Submit Form</button>
+        </div>
+        
+
+
+       
+</div>
+ 
+
+<script src="script.js"></script>
+</body>
+</html>

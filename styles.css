@@ -1,0 +1,120 @@
+#form-builder {
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+#toolbox {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#form-preview {
+    flex: 1;
+    padding: 30px;
+    margin-left: 10px;
+    width: 200px;
+    border: 2px dotted green;
+}
+
+.form-element {
+    margin-bottom: 15px;
+}
+
+.draggable {
+    cursor: move;
+    margin: 5px 0;
+    padding: 8px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+}
+
+.draggable i {
+    margin-right: 8px;
+}
+
+/* Style for form elements in preview area */
+.form-element label {
+    font-weight: bold;
+    margin-bottom: 5px;
+
+    display: block; /* Ensure labels are displayed on a new line */
+}
+
+.form-element input,
+.form-element textarea,
+.form-element select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+.form-element input[type="checkbox"],
+.form-element input[type="radio"] {
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+/* Style for submit button */
+#submit-btn {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-left: 95px;
+    border: none;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Add this style for the country code box */
+.form-element .country-code-box {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Add this style for the country code select */
+.form-element #countryCode {
+    width: 70px; /* Adjust the width as needed */
+}
+
+
+
+
+.country-code-box {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Add this CSS for the sortable placeholder */
+.sortable-placeholder {
+    border: 2px dashed #3498db;
+    background-color: #ecf0f1;
+    opacity: 0.6;
+    height: 50px; /* Adjust to your desired height */
+    margin-bottom: 15px; /* Adjust to your desired margin */
+}
+
+#form-preview {
+    display: flex;
+    flex-direction: column; /* Make the form elements stack vertically */
+}
+
+h2{
+    color: rgb(155, 151, 151);
+    font-size: 0.7em;
+    width: 70%;
+    margin-left: 10px;
+    margin-top: -5px;
+}
